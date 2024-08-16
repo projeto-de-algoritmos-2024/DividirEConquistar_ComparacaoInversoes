@@ -1,0 +1,18 @@
+guesslist: {
+  margintop: "20px";
+}
+guessitem: {
+  display: "flex";
+  justifycontent: "space-between";
+  marginbottom: "10px";
+  fontsize: "18px";
+}
+verde: {
+  color: "green";
+}
+amarelo: {
+  color: "orange";
+}
+vermelho: {
+  color: "red";
+}

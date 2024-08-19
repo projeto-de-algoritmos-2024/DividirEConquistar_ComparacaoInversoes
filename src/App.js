@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState } from "react";
 import InputField from "./Components/InputField";
 import GuessList from "./Components/GuessList";
+import ContagemInversoes from "./back";
 
 const App = () => {
   const [wordToGuess] = useState("DICIONARIO"); // Palavra que o usuário precisa adivinhar
@@ -25,15 +26,10 @@ const App = () => {
   };
 
   const checkProximity = (guess, wordToGuess) => {
-    const inversions = countInversions(guess, wordToGuess);
-    if (inversions === 0) return "Parabéns Você acertou!";
-    else return inversions + " pontos";
-  };
-
-  const countInversions = (guess, wordToGuess) => {
-    // Lógica de contagem de inversões
-    const inversions = 3;
-    return inversions;
+    const inversions = ContagemInversoes(guess, wordToGuess);
+    if (inversions.count === -1) return "Palavra inválida!"
+    if (inversions.count === 0) return "Parabéns Você acertou!";
+    else return inversions.count + " pontos";
   };
 
   const getUniqueLetters = (word) => {

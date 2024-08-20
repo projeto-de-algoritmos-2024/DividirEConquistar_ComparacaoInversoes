@@ -3,7 +3,7 @@
 ![imagem do jogo](./public/previa.png)
 
 ## Apresentação
-[Link da apresentação](https://www.youtube.com/watch?v=GcqZGe3XChE)
+[Link da apresentação](https://www.youtube.com/watch?v=f15p4YRMXGI)
 
 ## Para rodar
 
